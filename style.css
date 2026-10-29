@@ -286,20 +286,17 @@ header{
 @media (max-width: 768px) {
     header {
         width: 95%;
-        flex-direction: column;
-        padding: 15px 0;
-        border-radius: 15px;
+        padding: 0 15px;
+        box-sizing: border-box;
     }
     
     .nav {
-        flex-direction: column;
-        gap: 15px;
+        justify-content: center; /* Centers the logo when links are gone */
     }
     
-    .navli {
-        flex-direction: column;
-        gap: 15px;
-        align-items: center;
+    /* This removes the navigation links and button on mobile */
+    .navli, .hire-me {
+        display: none;
     }
 
     .first {
