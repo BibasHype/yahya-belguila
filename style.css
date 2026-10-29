@@ -4,7 +4,6 @@
     --text:#f5f2ed;
     --s2:#bb4651;
     --s3:#FFFAEB;
-
 }
 
 body{
@@ -13,36 +12,40 @@ body{
     font-family: "Fira Sans", sans-serif;
     font-weight: 500;
     font-style: normal;
+    overflow-x: hidden; /* Prevents horizontal scrolling */
 }
 
-
 /*header*/
-
 header{
     margin-top: 10px;
     background-color: var(--icons);
-    height: 70px;
+    min-height: 70px;
     width: 60%;
     border-radius: 20px;
     margin-left: auto;
     margin-right: auto;
-    
+    display: flex;
+    align-items: center;
 }
 
 .nav{
     display: flex;
     flex-direction: row;
-    
+    align-items: center;
+    width: 100%;
+    justify-content: space-between;
+    padding: 0 20px;
 }
+
 .navli{
     display: flex;
     flex-direction: row;
     gap: 40px;
-    padding-left: 150px;
     font-size: 22px;
     list-style-type: none;
     text-transform: capitalize;
-    text-decoration: none;
+    margin: 0;
+    padding: 0;
 }
 
 .navlia{
@@ -60,9 +63,6 @@ header{
 .logo{
     font-size: 30px;
     text-transform: uppercase;
-    padding-left: 50px;
-    
-    
 }
 
 .alogo{
@@ -74,8 +74,6 @@ header{
 }
 
 .hire-me{
-    margin-top: 17px;
-    margin-left: 40px;
     width: 100px;
     height: 35px;
     border-radius: 18px;
@@ -83,52 +81,57 @@ header{
     background-color: var(--background-color);
     color: var(--s3);
     transition: all 0.3s ease;
-    
+    cursor: pointer;
 }
+
 .btna{
     text-decoration: none;
     color: var(--text);
     text-transform: capitalize;
     font-size: 17px;
-
 }
 
 .hire-me:hover{
     scale: 1.05;
     box-shadow: 0 0 15px 3px black;
-    
 }
 
 /*main*/
-
 .first{
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px 10%;
+    min-height: 80vh;
+    box-sizing: border-box;
 }
 
 .into{
-    margin-left: 200px;
-    margin-top: 200px;
-    line-height: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 50%;
 }
 
 .name{
     text-transform: lowercase;
     color: var(--s2);
-    font-size: 30px;
+    font-size: clamp(20px, 3vw, 30px);
     font-family: "Great Vibes", cursive;
     font-weight: 400;
-     font-style: normal;
-    
+    font-style: normal;
+    margin: 0;
 }
 
 .hi{
     color: var(--text);
     text-transform: capitalize;
-    font-size: 50px;
+    font-size: clamp(30px, 5vw, 50px);
     font-family: "Lemon", serif;
     font-weight: 400;
     font-style: normal;
+    margin: 10px 0;
 }
 
 .job{
@@ -144,24 +147,23 @@ header{
     font-family: "Fira Sans", sans-serif;
     font-weight: 450;
     font-style: normal;
-    width: 80%;
     line-height: 25px;
-    margin-top: 50px;
-
+    margin-top: 20px;
 }
 
 .btns{
     display: flex;
     flex-direction: row;
     align-items: center;
-    gap: 60px;
+    gap: 40px;
+    margin-top: 30px;
+    flex-wrap: wrap;
 }
 
 .cv{
     width: 200px;
     height: 50px;
     border-radius: 30px;
-    margin-top: 15px;
     border: 2px solid var(--icons);
     background-color: transparent;
     color: var(--icons);
@@ -183,82 +185,137 @@ header{
 
 .links{
     display: flex;
-    gap: 20px;
+    gap: 15px;
 }
 
-.inst{
+.inst, .linkd, .tik, .what {
     width: 45px;
     height: 45px;
     border-radius: 50%;
-    margin-top: 12px;
-    background-color: #ee2a7b;
     border: none;
+    cursor: pointer;
     transition: all 0.3s ease;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
+.inst{
+    background-color: #ee2a7b;
+}
 .inst:hover{
     scale: 1.1;
     box-shadow: 0 0 20px 5px #ee2a7b;
 }
 
 .linkd{
-    width: 45px;
-    height: 45px;
-    border-radius: 50%;
-    margin-top: 12px;
     background-color: #0a66c2;
-    border: none;
-    cursor: pointer;
-    transition: all 0.3s ease;
 }
-
 .linkd:hover{
     scale: 1.1;
     box-shadow: 0 0 20px 5px #0a66c2;
 }
 
 .tik{
-    width: 45px;
-    height: 45px;
-    border-radius: 50%;
-    margin-top: 12px;
     background-color: #000000;
-    border: none;
-    cursor: pointer;
-    transition: all 0.3s ease;
 }
-
 .tik:hover{
     scale: 1.1;
     box-shadow: 0 0 20px 5px #ffffff;
 }
 
 .what{
-    width: 45px;
-    height: 45px;
-    border-radius: 50%;
-    margin-top: 12px;
     background-color: #25D366;
-    border: none;
-    cursor: pointer;
-    transition: all 0.3s ease;
 }
-
 .what:hover{
     scale: 1.1;
     box-shadow: 0 0 20px 5px #25d366;
 }
 
-
-
 .myimg{
-    width: 800px;
-    height: 800px;
-    padding-right: 100px;
-    padding-top: 50px;
-    filter: drop-shadow(0 0 50px #FFFAEB) 
-           ;
+    width: 100%;
+    max-width: 800px;
+    height: auto;
+    filter: drop-shadow(0 0 50px #FFFAEB);
+    object-fit: contain;
 }
 
+/* ========================================= */
+/* MEDIA QUERIES FOR RESPONSIVENESS          */
+/* ========================================= */
 
+/* Laptops and smaller desktops */
+@media (max-width: 1200px) {
+    header {
+        width: 80%;
+    }
+    .first {
+        padding: 50px 5%;
+    }
+}
 
+/* Tablets */
+@media (max-width: 992px) {
+    header {
+        width: 90%;
+    }
+    
+    .first {
+        flex-direction: column-reverse; /* Puts text below image on mobile/tablet */
+        text-align: center;
+        gap: 50px;
+        padding-top: 30px;
+    }
+    
+    .into {
+        max-width: 80%;
+        align-items: center;
+    }
+    
+    .navli {
+        gap: 20px;
+        font-size: 18px;
+    }
+    
+    .btns {
+        justify-content: center;
+    }
+}
+
+/* Mobile Devices */
+@media (max-width: 768px) {
+    header {
+        width: 95%;
+        flex-direction: column;
+        padding: 15px 0;
+        border-radius: 15px;
+    }
+    
+    .nav {
+        flex-direction: column;
+        gap: 15px;
+    }
+    
+    .navli {
+        flex-direction: column;
+        gap: 15px;
+        align-items: center;
+    }
+
+    .first {
+        padding: 30px 20px;
+    }
+
+    .into {
+        max-width: 100%;
+    }
+    
+    .myimg {
+        max-width: 300px; /* Scales down image for mobile */
+    }
+
+    .btns {
+        flex-direction: column;
+        gap: 20px;
+    }
+}
