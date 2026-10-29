@@ -1,0 +1,264 @@
+:root{
+    --background-color:#0b0b0b;
+    --icons:#8b0d1a;
+    --text:#f5f2ed;
+    --s2:#bb4651;
+    --s3:#FFFAEB;
+
+}
+
+body{
+    margin: 0;
+    background-color: var(--background-color);
+    font-family: "Fira Sans", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+}
+
+
+/*header*/
+
+header{
+    margin-top: 10px;
+    background-color: var(--icons);
+    height: 70px;
+    width: 60%;
+    border-radius: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+
+.nav{
+    display: flex;
+    flex-direction: row;
+    
+}
+.navli{
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+    padding-left: 150px;
+    font-size: 22px;
+    list-style-type: none;
+    text-transform: capitalize;
+    text-decoration: none;
+}
+
+.navlia{
+    text-decoration: none;
+    color: var(--background-color);
+    display: inline-block;
+    transition: all 0.3s ease;
+}
+
+.navlia:hover{
+    color: var(--s3);
+    transform: translateY(-5px);
+}
+
+.logo{
+    font-size: 30px;
+    text-transform: uppercase;
+    padding-left: 50px;
+    
+    
+}
+
+.alogo{
+    text-decoration: none;
+    color: var(--text);
+    font-family: "Racing Sans One", sans-serif !important;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.hire-me{
+    margin-top: 17px;
+    margin-left: 40px;
+    width: 100px;
+    height: 35px;
+    border-radius: 18px;
+    border: none;
+    background-color: var(--background-color);
+    color: var(--s3);
+    transition: all 0.3s ease;
+    
+}
+.btna{
+    text-decoration: none;
+    color: var(--text);
+    text-transform: capitalize;
+    font-size: 17px;
+
+}
+
+.hire-me:hover{
+    scale: 1.05;
+    box-shadow: 0 0 15px 3px black;
+    
+}
+
+/*main*/
+
+.first{
+    display: flex;
+    flex-direction: row;
+}
+
+.into{
+    margin-left: 200px;
+    margin-top: 200px;
+    line-height: 20px;
+}
+
+.name{
+    text-transform: lowercase;
+    color: var(--s2);
+    font-size: 30px;
+    font-family: "Great Vibes", cursive;
+    font-weight: 400;
+     font-style: normal;
+    
+}
+
+.hi{
+    color: var(--text);
+    text-transform: capitalize;
+    font-size: 50px;
+    font-family: "Lemon", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.job{
+    color: var(--icons);
+    font-family: "Luxurious Script", cursive;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.para{
+    color: var(--s3);
+    font-size: 18px;
+    font-family: "Fira Sans", sans-serif;
+    font-weight: 450;
+    font-style: normal;
+    width: 80%;
+    line-height: 25px;
+    margin-top: 50px;
+
+}
+
+.btns{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 60px;
+}
+
+.cv{
+    width: 200px;
+    height: 50px;
+    border-radius: 30px;
+    margin-top: 15px;
+    border: 2px solid var(--icons);
+    background-color: transparent;
+    color: var(--icons);
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    transition: all 0.35s ease;
+    cursor: pointer;
+}
+
+.cv:hover{
+    background-color: var(--icons);
+    color: var(--background-color);
+    scale: 1.05;
+    box-shadow: 0 0 20px 3px var(--icons);
+}
+
+.links{
+    display: flex;
+    gap: 20px;
+}
+
+.inst{
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    margin-top: 12px;
+    background-color: #ee2a7b;
+    border: none;
+    transition: all 0.3s ease;
+}
+
+.inst:hover{
+    scale: 1.1;
+    box-shadow: 0 0 20px 5px #ee2a7b;
+}
+
+.linkd{
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    margin-top: 12px;
+    background-color: #0a66c2;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.linkd:hover{
+    scale: 1.1;
+    box-shadow: 0 0 20px 5px #0a66c2;
+}
+
+.tik{
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    margin-top: 12px;
+    background-color: #000000;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.tik:hover{
+    scale: 1.1;
+    box-shadow: 0 0 20px 5px #ffffff;
+}
+
+.what{
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    margin-top: 12px;
+    background-color: #25D366;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.what:hover{
+    scale: 1.1;
+    box-shadow: 0 0 20px 5px #25d366;
+}
+
+
+
+.myimg{
+    width: 800px;
+    height: 800px;
+    padding-right: 100px;
+    padding-top: 50px;
+    filter: drop-shadow(0 0 50px #FFFAEB) 
+           ;
+}
+
+
+
